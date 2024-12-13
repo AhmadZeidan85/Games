@@ -48,7 +48,7 @@ public class OpenBook2 : MonoBehaviour
             if(openBook==true){
 
             bookFaceUpper.Rotate(new Vector3(Time.deltaTime * bookOpenSpeed, 0,0 ), Space.Self);
-           // bookFaceRight.Rotate(new Vector3(Time.deltaTime * bookOpenSpeed,0 ,0), Space.Self);
+        
           gift.transform.localScale += scaleFactor;
 
             float angle1 = Quaternion.Angle(bookFaceUpper.rotation, targetRotation);
@@ -83,7 +83,7 @@ public class OpenBook2 : MonoBehaviour
             if(closeBook==true){
 
           bookFaceUpper.Rotate(new Vector3(-Time.deltaTime * bookOpenSpeed,0 ,0), Space.Self);
-          //bookFaceRight.Rotate(new Vector3(-Time.deltaTime * bookOpenSpeed,0 ,0), Space.Self);
+       
           gift.transform.localScale -= scaleFactor;
 
             float angle1 = Quaternion.Angle(bookFaceUpper.rotation, targetRotation);
